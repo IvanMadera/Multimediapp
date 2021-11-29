@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="172dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/multimedia" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="78dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="MultimediApp"
+        android:textColor="#407BFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#407BFF"
+        android:drawableLeft="@drawable/ic_action_name_image"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="Imagen vectorial"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#407BFF"
+        android:drawableLeft="@drawable/ic_action_name_audio"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="Grabación de voz"
+        app:layout_constraintBottom_toTopOf="@+id/btnVideo"
+        app:layout_constraintStart_toStartOf="@+id/btnImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnImage" />
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="93dp"
+        android:backgroundTint="#407BFF"
+        android:drawableLeft="@drawable/ic_action_name_video"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="Reproducción de video"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVoice" />
+</androidx.constraintlayout.widget.ConstraintLayout>
