@@ -6,4 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".ImageActivity">
 
+    <ImageView
+        android:id="@+id/imagev"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="119dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnanimacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector" />
+
+    <Button
+        android:id="@+id/btnanimacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="135dp"
+        android:backgroundTint="#407BFF"
+        android:drawableLeft="@drawable/ic_action_name_rotation"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="ANIMACION ROTATION"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagev" />
 </androidx.constraintlayout.widget.ConstraintLayout>
